@@ -32,3 +32,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/UnityHDRI/ 
+*.exr
+Assets/FaceAvataaars/UnityHDRI/
+test/
+
+Assets/.DS_Store

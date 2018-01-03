@@ -628,7 +628,7 @@ MonoBehaviour:
     anchorPos: {x: 0, y: 0, z: 0}
     uniqueSprite: 0
     baseMultiplier: 1
-    emotions: 1
+    emotions: 2
     attachmentPoint: 10
     greaterThan: 0
     threshhold: 0.3

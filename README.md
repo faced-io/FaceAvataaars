@@ -10,8 +10,11 @@ By default, "I love you" is pre-loaded. Here are a few other blendshape recordin
 - I love you http://faced.io/blendshaperecorder/id/4b2d28cc-2dc7-4794-bad5-b5b327a5b297
 - General Talking http://faced.io/blendshaperecorder/id/f8381138-797d-41d1-aaf2-6586dc55a56a
 
+with Head rotation 
+- Head sway http://faced.io/blendshaperecorder/id/46380dcc-d4cb-4ef7-81da-eaba1aac8972
+- Shake and stop http://faced.io/blendshaperecorder/id/a5330343-a04c-4788-9554-933c4cad4209
 
-[![https://gyazo.com/0d885f53cbde04350f135e8f87565ef0](https://i.gyazo.com/0d885f53cbde04350f135e8f87565ef0.gif)](https://gyazo.com/0d885f53cbde04350f135e8f87565ef0)
+[![https://gyazo.com/8f60e8254f20a6a9a8e6219c28ce1d06](https://i.gyazo.com/8f60e8254f20a6a9a8e6219c28ce1d06.gif)](https://gyazo.com/8f60e8254f20a6a9a8e6219c28ce1d06)
 
 
 

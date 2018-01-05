@@ -1,4 +1,4 @@
-﻿/* v0.1 
+﻿/* v0.2 
 MIT License
 
 Copyright(c) 2017-2018
@@ -35,11 +35,14 @@ public partial class Avataaars : MonoBehaviour {
     public AvataaarPart[] crucialParts = new AvataaarPart[0]; // eyes and other things that require isOpened tag
     public EmotionsDefinable[] emotionsDefinable = new EmotionsDefinable[0];
 
- //   public static Dictionary<Sprite, AvataaarPart> dicSprite2AvataaarPart = new Dictionary<Sprite, AvataaarPart>();
     public static Dictionary<AttachmentPoints, List< AvataaarPart >> dicAtach2AvataaarPart = new Dictionary<AttachmentPoints, List< AvataaarPart >>();
-    //public static Dictionary<string, AttachmentPointMapper> dicKey2Attachment = new Dictionary<string, AttachmentPointMapper>();
+
     public static Dictionary<AttachmentPoints,Transform> dicAttachmentPoint2Transform = new Dictionary<AttachmentPoints, Transform>();
     public static Dictionary<Emotions, List< AvataaarPart> > dicEmo2Part = new Dictionary<Emotions, List < AvataaarPart >>();
+
+    public static Dictionary<Transform, List<Sprite>> dicTransform2Sprite = new Dictionary<Transform, List<Sprite>>();
+    public static Dictionary<Transform,List< PartsAndFolderNames>> dicTransform2PartsAndFolderNames = new Dictionary<Transform, List< PartsAndFolderNames>>();
+
 
     public Emotions currentEmotion;
 
@@ -69,11 +72,28 @@ public partial class Avataaars : MonoBehaviour {
           //  AddSprite(crucialParts[i].sprite,crucialParts[i]);
             AddAttachmentPoint(crucialParts[i]);
         }
-
-        //TODO load folders for other parts
+ 
+        // customizable parts loading
         for (int i = 0; i < partsAndFolderNames.Length;i++){
-            
+            Sprite[] sprites = Resources.LoadAll<Sprite>(partsAndFolderNames[i].folderName);
+            for (int j = 0; j < sprites.Length;j++){
+                AddTransformSpritePoint(partsAndFolderNames[i].attachmentTransform, sprites[j]);
+                AddTransformPartsfoldername(partsAndFolderNames[i].attachmentTransform,partsAndFolderNames[i]);
+            }
         }
+    }
+
+    private void AddTransformSpritePoint(Transform t,Sprite s){
+        if (dicTransform2Sprite.ContainsKey(t))
+            dicTransform2Sprite[t].Add(s);
+        else
+            dicTransform2Sprite[t] = new List<Sprite> { s };
+    }
+    private void AddTransformPartsfoldername(Transform t, PartsAndFolderNames s) {
+        if (dicTransform2PartsAndFolderNames.ContainsKey(t))
+            dicTransform2PartsAndFolderNames[t].Add(s);
+        else
+            dicTransform2PartsAndFolderNames[t] = new List<PartsAndFolderNames> { s };
     }
 
     public void UpdatePartAppearance(AvataaarPart ap,float yscale){

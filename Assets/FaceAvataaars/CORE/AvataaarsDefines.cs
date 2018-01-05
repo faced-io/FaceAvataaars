@@ -92,10 +92,11 @@ public partial class Avataaars  : MonoBehaviour {
 
     [System.Serializable]
     public class PartsAndFolderNames {
-        public AttachmentPoints attachmentPoint;
+        public Transform attachmentTransform;
         public string generalClassifier;
         public string subClassifier;
         public string folderName;
+        public Color[] colors;
     }
 
     [System.Serializable]

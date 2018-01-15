@@ -1,7 +1,10 @@
 # FaceAvataaars
 
+See Youtube Demo with ARKit face tracking here. https://www.youtube.com/watch?v=YsJJ5KWttgc
+
 - Non-iPhoneX testing using BlendShapeReader / BlendShapeRecorder (to be released soon) 
 - iPhone X face tracking puppeteering [http://Avataaaars.com]
+
 
 
 By default, "I love you" is pre-loaded. Here are a few other blendshape recordings to play back 
@@ -20,3 +23,6 @@ with Head rotation
 
 Note: this is a Unity project 
 [![https://gyazo.com/13a6341dbaa16dd6179b4c59fdea55c7](https://i.gyazo.com/13a6341dbaa16dd6179b4c59fdea55c7.jpg)](https://gyazo.com/13a6341dbaa16dd6179b4c59fdea55c7)
+
+
+Used in #WrldChallenge project YouAnchor @ https://www.youtube.com/watch?v=u9puE5LdpSQ&t=22s

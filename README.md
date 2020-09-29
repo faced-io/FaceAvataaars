@@ -26,3 +26,7 @@ Note: this is a Unity project
 
 
 Used in #WrldChallenge project YouAnchor @ https://www.youtube.com/watch?v=u9puE5LdpSQ&t=22s
+
+****
+
+Regarding the custom format in BlendShapeReader.cs and Recorder.cs - check out: https://gist.github.com/yosun/76a90114066f1e9de4518ba9029e1802
